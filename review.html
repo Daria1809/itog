@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>кт2</title>
+<style>
+  html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+}
+  .comment {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .comment img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comment-info {
+    margin-top: 10px;
+  }
+  .center{
+   text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 class="center">Отзывы</h1>
+
+
+
+<script>
+const comment = [
+    {
+        "user": "Love_cooking",
+        "img_link": "https://avatars.mds.yandex.net/i?id=2ad9004c1b78b26294e3b214f5944e49_l-5232996-images-thumbs&n=13",
+        "cooked": "Брауни",
+        "rate": "10/10",
+        "description": "Безумно вкусный брауни! Буду готовить ещё",
+        "id": 1
+    },
+    {
+        "user": "Basil",
+        "img_link": "https://avatars.mds.yandex.net/i?id=7519942c8f995dc3185db7d8e0a9457d_l-5233063-images-thumbs&n=13",
+        "cooked": "Паста",
+        "rate": "10/10",
+        "description": "Паста очень вкусная, нежная. Пробовала разные рецепты, остановилась на этом.",
+        "id": 2
+    },
+    {
+        "user": "Simon",
+        "img_link": "https://avatars.mds.yandex.net/i?id=45069b58e3d85e6256e795ca14c04dea_l-5644655-images-thumbs&n=13",
+        "cooked": "Панкейки",
+        "rate": "8/10",
+        "description": "Пышные, вкусные. В меру сладкие, хорошо как и самостоятельно, так и с топпингами.",
+        "id": 3
+    },
+    {
+        "user": "Molly",
+        "img_link": "https://avatars.mds.yandex.net/i?id=3e0dbd62730c860340fe5a7df8cdd982_l-5232983-images-thumbs&n=13",
+        "cooked": "Салат",
+        "rate": "7/10",
+        "description": "Хороший, классический салат.",
+        "id": 4
+    },
+]
+
+comment.forEach(comment => {
+      const commentElement = document.createElement('div');
+      commentElement.classList.add('comment');
+
+      const commentInfo = document.createElement('div');
+      commentInfo.classList.add('comment-info');
+      commentInfo.innerHTML = `
+        <h2>Пользователь: ${comment.user}</h2>
+        <p>Готовил: ${comment.cooked}</p>
+        <p>Оценка: ${comment.rate}</p>
+        <p>Описание: ${comment.description}</p>
+      `;
+      commentElement.appendChild(commentInfo);
+      
+      const commentImage = document.createElement('img');
+      commentImage.src = comment.img_link;
+      commentElement.appendChild(commentImage);
+
+      // Добавить котика на страницу
+      document.body.appendChild(commentElement);
+    });
+</script>
+
+</body>
+</html>

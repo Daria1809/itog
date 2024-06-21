@@ -1,0 +1,35 @@
+body {
+   font-size: 20px;
+   font-weight: 500;
+   font-family: sans-serif;
+}
+
+ul li {
+   list-style: none; 
+}
+
+.list span {
+   cursor: pointer;
+}
+
+.hide::before {
+   content: "+"; 
+}
+
+.show::before {
+   content: "-"; 
+}    
+.container {
+    background: #aebed6;
+    padding: 2px;
+    max-width: 600px;
+    width: 770px;
+    height: 25px;
+    margin-bottom: 200px;
+}
+.pad{
+    margin-top: 10px;
+}
+.center{
+   text-align: center;
+}
