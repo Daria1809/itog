@@ -3,7 +3,7 @@
 <head>
     <title>Итоговая кт</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="pancake.js" defer></script>
 <style>
     body {
    font-size: 20px;
@@ -13,13 +13,73 @@
 .center{
     text-align: center;
 }
+.container{
+    display:flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.element1{
+    margin: 0 5px;
+}
+.element2{
+    margin: 0 5px;
+    width: 450px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: auto; margin-bottom: auto;
+}
+.pad{
+    padding: 0 50px 0 50px;
+    text-align: justify;
+}
+#id{
+    text-align: center;
+}
 </style>
 </head>
 <body>
 <script>
-
 </script>
-    <h1 class="center">Панкейки</h1>
-    
+    <h1 class="center">Блинчики</h1>
+    <div class="container">
+        <div class="element1"><img src="https://img.goodfon.ru/original/1366x768/c/8b/blinchiki-smetana-tvorog-ruletiki.jpg" width="450px"></div>
+        <div class="element2">
+            <p>Простой рецепт с гарантированным результатом — а именно тонкими и не слишком сладкими блинами, к которым подойдёт джем, домашнее варенье или сметана.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="element2">
+            <h3></ul>Ингридиенты</h3>
+            <ul id="list"></ul>
+        </div>
+        <div class="element1"><img src="https://avatars.dzeninfra.ru/get-zen_doc/5289592/pub_63e8bdf2b2d60c711329358b_63e8d03423ae796bcf86ca0f/scale_1200" width="450px"></div>
+    </div>
+
+    <div class="container">
+        <div class="pad">
+        <p>- В глубокой миске взбиваем венчиком яйца, сахар и соль. <br>
+            - Смесь должна получиться однородной.<br>
+            - Добавляем в яичную смесь половину молока и вновь взбиваем венчиком.<br>
+            - Затем по чуть-чуть добавляем в смесь муку, не переставая размешивать её венчиком или лопаткой. <br>
+            - Главное — чтобы не оставалось комочков.<br>
+            - Добавляем оставшееся молоко и 2 ст. л. растительного масла. <br>
+            - Перемешиваем и оставляем на 15 минут при комнатной температуре.<br>
+            - Для жарки подойдёт чугунная сковорода или любая другая с низкими бортиками. <br>
+            - Смазываем её растительным маслом и выливаем половником жидкое тесто в центр сковороды, распределяя его по поверхности круговыми движениями.<br>
+            - Обжариваем блинчики на среднем огне с каждой стороны — на одну сторону нужна примерно минута. <br>
+            - Готовность легко определить по краям — они начнут румяниться и «отлипать» от поверхности.<br>
+            - Подаём с джемом или домашним вареньем, сметаной, свежими ягодами или кленовым сиропом.</p>
+    </div>
+</div>
 </body>
 </html>

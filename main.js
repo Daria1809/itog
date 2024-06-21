@@ -24,4 +24,8 @@ for (let li of list.querySelectorAll('li')) {
         event.target.classList.remove('hide');
     }
 }  
+const список = ['Яблоко', 'Апельсин', 'Банан'];
 
+const элементыСписка = список.map((фрукт) => `<li>${фрукт}</li>`);
+
+document.getElementById('список').innerHTML = элементыСписка.join('');
