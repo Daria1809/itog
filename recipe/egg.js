@@ -8,5 +8,5 @@ const list = [
     '1 щепотка соли',
     'перец по вкусу'
 ];
-const элементыСписка = list.map((фрукт) => `<li>${фрукт}</li>`);
-document.getElementById('list').innerHTML = элементыСписка.join('');
+const listElem = list.map((фрукт) => `<li>${фрукт}</li>`);
+document.getElementById('list').innerHTML = listElem.join('');

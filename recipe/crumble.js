@@ -9,5 +9,5 @@ const list = [
     'молотый кардомон по вкусу',
     'гвоздика по вкусу'
 ];
-const элементыСписка = list.map((фрукт) => `<li>${фрукт}</li>`);
-document.getElementById('list').innerHTML = элементыСписка.join('');
+const listElem = list.map((фрукт) => `<li>${фрукт}</li>`);
+document.getElementById('list').innerHTML = listElem.join('');

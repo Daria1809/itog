@@ -9,5 +9,5 @@ const list = [
     '25 гр темного шоколада',
     '0.5 ч.л. соли'
 ];
-const элементыСписка = list.map((фрукт) => `<li>${фрукт}</li>`);
-document.getElementById('list').innerHTML = элементыСписка.join('');
+const listElem = list.map((фрукт) => `<li>${фрукт}</li>`);
+document.getElementById('list').innerHTML = listElem.join('');
